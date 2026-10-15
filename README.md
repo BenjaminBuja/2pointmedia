@@ -3,12 +3,14 @@
 Gleiches Setup wie bei fast-recruiting: GitHub-Repo → Cloudflare Worker.
 
 ## Was wo liegt
+- Jeder Push auf `main` wird von Cloudflare automatisch neu veröffentlicht.
 - `public/` – die Webseite (Startseite, Impressum, Datenschutz, 404-Seite, Schriften)
 - `src/worker.js` – nimmt das Anfrage-Formular entgegen und schickt dir jede Anfrage per E-Mail
 - `wrangler.jsonc` – Einstellungen für Cloudflare
 
 ## Online stellen (einmalig)
-1. Auf GitHub ein neues privates Repo `2pointmedia-website` anlegen und diesen Ordner hochladen.
+1. Repo auf GitHub (erledigt: `2pointmedia`). Wichtig: `wrangler.jsonc`, `public/` und `src/` müssen direkt im
+   Hauptverzeichnis des Repos liegen – nicht in einem Unterordner und nicht als ZIP. Sonst findet Cloudflare nichts.
 2. Cloudflare → Workers & Pages → Erstellen → «Mit GitHub verbinden» → Repo wählen → Bereitstellen.
 3. Formular aktivieren: Konto bei resend.com anlegen, Domain 2pointmedia.ch dort bestätigen, API-Schlüssel kopieren.
    In Cloudflare beim Worker unter Einstellungen → Variablen und Geheimnisse:
