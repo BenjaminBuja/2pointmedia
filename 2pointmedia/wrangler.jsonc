@@ -1,0 +1,13 @@
+{
+  "name": "2pointmedia",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  "vars": {
+    "LEAD_TO": "info@2pointmedia.ch"
+  }
+}
