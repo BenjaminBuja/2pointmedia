@@ -1,4 +1,50 @@
+# 2Point Media – alle Suchmaschinen und KI-Crawler sind willkommen.
+# Hinweis: Cloudflare kann KI-Bots zusätzlich blockieren. Das wird im Cloudflare-Dashboard
+# unter Security → "AI Crawl Control" / "Block AI bots" eingestellt, nicht hier.
+
 User-agent: *
+Allow: /
+
+# KI-Suche und KI-Assistenten (explizit erlaubt)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://2pointmedia.ch/sitemap.xml

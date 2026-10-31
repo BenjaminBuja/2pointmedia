@@ -12,6 +12,11 @@
 <meta property="og:description" content="Social Recruiting, Kundengewinnung und Videos – ausschliesslich für Handwerksbetriebe. Aus Basel, für die Deutschschweiz.">
 <meta property="og:image" content="https://onecdn.io/cdn-cgi/image/width=1200,height=600,fit=contain/media/8337112e-3cbc-4d50-a742-ce9c7ed0069e/lg">
 <meta property="og:locale" content="de_CH">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="keywords" content="Social Recruiting Handwerk Schweiz, Recruiting Agentur Handwerk Basel, Mitarbeiter finden Handwerksbetrieb, Kundengewinnung Handwerk, Videoproduktion Handwerk, Marketingagentur Handwerk Deutschschweiz">
+<meta name="author" content="Benjamin Buja, 2Point Media">
+<meta name="geo.region" content="CH-BS">
+<meta name="geo.placename" content="Basel">
 <meta name="theme-color" content="#1A1A1A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A1A1A'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='38' fill='%23DB9A31'%3E2%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,16 +29,102 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "2Point Media",
-  "url": "https://2pointmedia.ch/",
-  "telephone": "+41795516738",
-  "email": "info@2pointmedia.ch",
-  "description": "Marketingagentur ausschliesslich für Handwerksbetriebe: Social Recruiting, Kundengewinnung, Videoproduktion und Webseiten.",
-  "address": {"@type": "PostalAddress","streetAddress": "St. Jakob-Strasse 200","postalCode": "4052","addressLocality": "Basel","addressCountry": "CH"},
-  "areaServed": ["Basel-Stadt","Basel-Landschaft","Deutschschweiz"],
-  "founder": {"@type": "Person","name": "Benjamin Buja"},
-  "sameAs": ["https://www.instagram.com/2point.media/","https://linkedin.com/company/2-point-media/","https://www.facebook.com/profile.php?id=100079859542845"]
+  "@graph": [
+    {
+      "@type": ["ProfessionalService","MarketingAgency","LocalBusiness"],
+      "@id": "https://2pointmedia.ch/#organization",
+      "name": "2Point Media",
+      "alternateName": "2 Point Media",
+      "url": "https://2pointmedia.ch/",
+      "logo": "https://onecdn.io/cdn-cgi/image/width=1200,height=600,fit=contain/media/8337112e-3cbc-4d50-a742-ce9c7ed0069e/lg",
+      "image": "https://onecdn.io/cdn-cgi/image/width=1200,height=600,fit=contain/media/8337112e-3cbc-4d50-a742-ce9c7ed0069e/lg",
+      "telephone": "+41795516738",
+      "email": "info@2pointmedia.ch",
+      "priceRange": "CHF",
+      "description": "2Point Media ist eine Marketingagentur aus Basel, die ausschliesslich für Handwerksbetriebe in der Deutschschweiz arbeitet. Kernleistungen: Social Recruiting (Mitarbeitergewinnung über Instagram und Facebook mit vor Ort gedrehten Videos), Kundengewinnung über Video-Kampagnen, Videoproduktion und Webseiten. Gründer und Ansprechpartner ist Benjamin Buja, gelernter Polymechaniker.",
+      "slogan": "Müssen findet dich. Wollen musst du wecken.",
+      "address": {"@type": "PostalAddress","streetAddress": "St. Jakob-Strasse 200","postalCode": "4052","addressLocality": "Basel","addressRegion": "Basel-Stadt","addressCountry": "CH"},
+      "geo": {"@type": "GeoCoordinates","latitude": 47.5416,"longitude": 7.6186},
+      "areaServed": [
+        {"@type": "AdministrativeArea","name": "Basel-Stadt"},
+        {"@type": "AdministrativeArea","name": "Basel-Landschaft"},
+        {"@type": "AdministrativeArea","name": "Aargau"},
+        {"@type": "AdministrativeArea","name": "Solothurn"},
+        {"@type": "AdministrativeArea","name": "Bern"},
+        {"@type": "AdministrativeArea","name": "Zürich"},
+        {"@type": "AdministrativeArea","name": "Deutschschweiz"}
+      ],
+      "knowsAbout": ["Social Recruiting","Mitarbeitergewinnung im Handwerk","Recruiting-Videos","Employer Branding für KMU","Kundengewinnung für Handwerksbetriebe","Meta Ads (Instagram und Facebook)","Videoproduktion","Webseiten für Handwerksbetriebe"],
+      "knowsLanguage": ["de-CH","de"],
+      "founder": {"@id": "https://2pointmedia.ch/#benjamin-buja"},
+      "employee": {"@id": "https://2pointmedia.ch/#benjamin-buja"},
+      "contactPoint": {"@type": "ContactPoint","telephone": "+41795516738","email": "info@2pointmedia.ch","contactType": "sales","availableLanguage": ["German"],"areaServed": "CH"},
+      "sameAs": ["https://www.instagram.com/2point.media/","https://linkedin.com/company/2-point-media/","https://www.facebook.com/profile.php?id=100079859542845","https://www.youtube.com/playlist?list=PLq-tSkPF_7nLvM9CVybsLSK_pnYiTm-1g"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Leistungen für Handwerksbetriebe",
+        "itemListElement": [
+          {"@type": "Offer","itemOffered": {"@id": "https://2pointmedia.ch/social-recruiting#service"}},
+          {"@type": "Offer","itemOffered": {"@id": "https://2pointmedia.ch/kundengewinnung#service"}},
+          {"@type": "Offer","itemOffered": {"@id": "https://2pointmedia.ch/videoproduktion#service"}},
+          {"@type": "Offer","itemOffered": {"@id": "https://2pointmedia.ch/webseiten#service"}}
+        ]
+      },
+      "review": [
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Roman Büriki"},"publisher": {"@type": "Organization","name": "Adam Schreinerei AG"},"reviewBody": "Innerhalb von nur zwei Wochen hat 2Point Media für uns einen passenden Projektleiter gefunden. Die schnelle und zielgerichtete Umsetzung hat uns beeindruckt."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Beat Fuchser"},"publisher": {"@type": "Organization","name": "Mollet & Co AG"},"reviewBody": "Dank der Zusammenarbeit mit 2Point Media haben wir in nur drei Wochen einen angehenden Sicherheitsberater gefunden. Wir sind sehr zufrieden mit dem Ergebnis."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Daniel Furrer"},"publisher": {"@type": "Organization","name": "Wild Gartenbau AG"},"reviewBody": "Dank der gezielten Social-Recruiting-Kampagne haben wir in drei Wochen einen qualifizierten Mitarbeiter für den Gartenbau gefunden und gleichzeitig sehr kostengünstig ins Marketing investiert."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Dejan Lukic"},"publisher": {"@type": "Organization","name": "Fenster Nauer AG"},"reviewBody": "Besonders überzeugt haben die klare Kommunikation, die Termintreue und das starke Gespür für unseren Auftritt. Ein verlässlicher Partner, den wir uneingeschränkt weiterempfehlen können."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Werner Ruckli"},"publisher": {"@type": "Organization","name": "SRS Allesys AG"},"reviewBody": "Wir haben mit dem Social Media Recruiting von 2Point Media Erfolg gehabt. Wegen dieses Erfolgs sowie der angenehmen Art von Benjamin Buja kann ich die Firma sehr empfehlen."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Livio Brun"},"publisher": {"@type": "Organization","name": "KK-Kühltechnik AG"},"reviewBody": "2Point Media hat unseren ganzen Online-Auftritt aufgebaut – inklusive Kundenstimmen. So sieht man genau, was wir leisten können."},
+        {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": 5,"bestRating": 5},"author": {"@type": "Person","name": "Serkan Kalkan"},"publisher": {"@type": "Organization","name": "Worksystem SWISS"},"reviewBody": "Dank der professionellen Werbevideos und der Betreuung der Kanäle konnten wir unser Investment in die Kampagne um ein Vielfaches wieder hereinholen."}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://2pointmedia.ch/#benjamin-buja",
+      "name": "Benjamin Buja",
+      "jobTitle": "Gründer und Inhaber",
+      "worksFor": {"@id": "https://2pointmedia.ch/#organization"},
+      "url": "https://2pointmedia.ch/ueber-uns",
+      "description": "Gründer von 2Point Media. Gelernter Polymechaniker, seit dem 15. Lebensjahr hinter der Kamera. Plant, dreht und schneidet Recruiting- und Werbevideos für Handwerksbetriebe in der Deutschschweiz selbst.",
+      "knowsAbout": ["Social Recruiting","Videoproduktion","Handwerk","Mitarbeitergewinnung"],
+      "sameAs": ["https://linkedin.com/company/2-point-media/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://2pointmedia.ch/#website",
+      "url": "https://2pointmedia.ch/",
+      "name": "2Point Media",
+      "inLanguage": "de-CH",
+      "publisher": {"@id": "https://2pointmedia.ch/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://2pointmedia.ch/#webpage",
+      "url": "https://2pointmedia.ch/",
+      "name": "2Point Media – Mitarbeiter & Kunden für Handwerksbetriebe | Basel",
+      "isPartOf": {"@id": "https://2pointmedia.ch/#website"},
+      "about": {"@id": "https://2pointmedia.ch/#organization"},
+      "inLanguage": "de-CH"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://2pointmedia.ch/#faq",
+      "mainEntity": [
+        {"@type": "Question","name": "Was macht 2Point Media genau?","acceptedAnswer": {"@type": "Answer","text": "2Point Media ist eine Marketingagentur aus Basel, die nur für Handwerksbetriebe arbeitet. Wir finden Mitarbeiter über Social Recruiting (Videos aus dem Betrieb, Kampagnen auf Instagram und Facebook, Bewerbung in 2 Minuten per Handy, Vorauswahl der Bewerbungen), holen Kundenanfragen über Video-Kampagnen in der Region und bauen den Online-Auftritt mit Webseite, Social-Media-Content und Referenzvideos."}},
+        {"@type": "Question","name": "Ich habe schon Geld bei Agenturen verbrannt. Warum soll es bei euch anders sein?","acceptedAnswer": {"@type": "Answer","text": "Weil wir nur fürs Handwerk arbeiten und selbst daher kommen. Wir müssen deine Branche nicht erst lernen. Und wir legen vor dem Start ein messbares Ziel fest – Bewerbungen oder Anfragen. Wird es nicht erreicht, arbeiten wir ohne Zusatzkosten weiter."}},
+        {"@type": "Question","name": "Wie viel Zeit muss ich investieren?","acceptedAnswer": {"@type": "Answer","text": "Wenig. Zwei bis drei Termine à 30 Minuten plus ein Drehtag bei dir im Betrieb. Konzept, Dreh, Schnitt, Kampagne und Vorauswahl der Bewerbungen machen wir."}},
+        {"@type": "Question","name": "Wann sehe ich erste Resultate?","acceptedAnswer": {"@type": "Answer","text": "Bei Recruiting-Kampagnen kommen die ersten Bewerbungen meist nach 2–3 Wochen. Bei der Kundengewinnung rechnen wir in Monaten, nicht in Tagen – dafür planbar."}},
+        {"@type": "Question","name": "Funktioniert das auch in meiner Region?","acceptedAnswer": {"@type": "Answer","text": "Wir sind in Basel zu Hause und arbeiten für Betriebe in der ganzen Deutschschweiz – Basel-Stadt, Baselland, Aargau, Solothurn, Bern, Zürich und darüber hinaus. Die Kampagnen laufen gezielt im Umkreis deines Betriebs."}},
+        {"@type": "Question","name": "Mein Team will nicht vor die Kamera.","acceptedAnswer": {"@type": "Answer","text": "Das hören wir oft – und am Drehtag ist es meistens kein Thema mehr. Wir drehen locker, im Arbeitsalltag, ohne Schauspiel. Wer nicht will, muss nicht."}},
+        {"@type": "Question","name": "Was kostet das?","acceptedAnswer": {"@type": "Answer","text": "Das hängt davon ab, was du brauchst: eine einzelne Recruiting-Kampagne ist etwas anderes als laufende Kundengewinnung. Nach der kostenlosen Analyse bekommst du eine klare Offerte – was wir machen, was es kostet und was am Ende rausschauen soll."}},
+        {"@type": "Question","name": "Was unterscheidet Social Recruiting von einem Temporärbüro oder Stellenportal?","acceptedAnswer": {"@type": "Answer","text": "Stellenportale erreichen nur, wer gerade aktiv sucht. Social Recruiting zeigt Videos aus deinem Betrieb den Fachkräften in deiner Region, die bereits einen Job haben, aber offen für einen Wechsel sind. Beworben wird in 2 Minuten per Handy, ohne Lebenslauf. Wir sortieren vor, bei dir landen nur passende Bewerbungen."}},
+        {"@type": "Question","name": "Für welche Gewerke arbeitet 2Point Media?","acceptedAnswer": {"@type": "Answer","text": "Für Sanitär, Heizung und Lüftung, Elektro und Gebäudetechnik, Bau und Renovation, Schreinereien und Metallbau, Fenster-, Fassaden- und Dachbau, Gartenbau sowie Kälte- und Klimatechnik. Referenzen gibt es unter anderem von Adam Schreinerei AG, Mollet & Co AG, Wild Gartenbau AG, Fenster Nauer AG, SRS Allesys AG und KK-Kühltechnik AG."}},
+        {"@type": "Question","name": "Wer ist mein Ansprechpartner?","acceptedAnswer": {"@type": "Answer","text": "Benjamin Buja, Gründer von 2Point Media und gelernter Polymechaniker. Er plant, dreht und schneidet selbst – du hast vom ersten Gespräch bis zur Auswertung eine Person als Ansprechpartner."}}
+      ]
+    }
+  ]
 }
 </script>
 <style>
@@ -133,6 +224,21 @@ h2.display{font-size:clamp(44px,7vw,92px)}
 .marquee{display:flex;width:max-content;animation:slide 40s linear infinite}
 .marquee img{height:46px;width:auto;margin:0 44px;filter:grayscale(1) brightness(2.2);opacity:.6;object-fit:contain}
 @keyframes slide{to{transform:translateX(-50%)}}
+
+/* Kundennamen als Text + Kurz erklärt */
+.clients-text{text-align:center;font-size:14px;color:var(--muted);margin:22px auto 0;max-width:900px;padding:0 24px;letter-spacing:0;text-transform:none;line-height:1.7}
+.clients-text a{color:var(--gold);text-decoration:underline}
+.about-short .lead a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.facts{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+@media(min-width:1100px){.facts{grid-template-columns:repeat(5,1fr)}}
+.facts div{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.facts dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.facts dd{color:#e3ddd3;font-size:15.5px;line-height:1.55}
+.facts dd a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.srv h3 a{color:inherit}
+.srv h3 a:hover{color:var(--gold)}
+.srv .more{display:inline-block;margin-top:18px;font-size:14px;font-weight:700;color:#b07a1d}
+.srv.feat .more{color:var(--gold)}
 
 /* Problem / Müssen vs Wollen */
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:60px}
@@ -305,7 +411,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 
 /* Footer */
 footer{border-top:1px solid var(--line);padding:60px 0 120px;font-size:15px;color:var(--muted)}
-footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:36px}
 footer h4{color:#fff;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
 footer ul{list-style:none;display:grid;gap:8px}
 footer a:hover{color:var(--gold)}
@@ -372,8 +478,8 @@ footer a:hover{color:var(--gold)}
         <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#rechner">Vakanz-Rechner</a></li>
-        <li><a href="#resultate">Resultate</a></li>
-        <li><a href="#ueber">Über mich</a></li>
+        <li><a href="/referenzen">Referenzen</a></li>
+        <li><a href="/ueber-uns">Über uns</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
@@ -427,6 +533,23 @@ footer a:hover{color:var(--gold)}
 <section class="logos" aria-label="Kunden">
   <p>Betriebe, die schon wach sind</p>
   <div class="marquee" id="marquee"></div>
+  <p class="clients-text">Adam Schreinerei AG · Mollet &amp; Co AG · Wild Gartenbau AG · Fenster Nauer AG · SRS Allesys AG · KK-Kühltechnik AG · ByWood GmbH · Worksystem SWISS · IKEA Itingen (Dokumentarfilm) – <a href="/referenzen">alle Referenzen</a></p>
+</section>
+
+<!-- KURZ ERKLÄRT -->
+<section class="sec about-short" id="kurz" style="padding-top:80px;padding-bottom:40px">
+  <div class="wrap">
+    <span class="eyebrow rv">Kurz erklärt</span>
+    <h2 class="display rv" style="margin-top:20px;font-size:clamp(34px,5vw,64px)">Wer wir sind, was wir machen.</h2>
+    <p class="lead rv" style="margin-top:24px;max-width:820px"><strong>2Point Media</strong> ist eine Marketingagentur aus Basel, die ausschliesslich für Handwerksbetriebe in der Deutschschweiz arbeitet. Wir finden Mitarbeiter über <a href="/social-recruiting">Social Recruiting</a>, holen Aufträge über <a href="/kundengewinnung">Kundengewinnung</a> mit Video-Kampagnen und bauen den Auftritt mit <a href="/videoproduktion">Videos</a> und <a href="/webseiten">Webseiten</a>. Gründer und einziger Ansprechpartner ist <a href="/ueber-uns">Benjamin Buja</a>, gelernter Polymechaniker.</p>
+    <dl class="facts rv d1">
+      <div><dt>Für wen</dt><dd>Handwerksbetriebe mit 1 bis 50+ Mitarbeitenden: Sanitär, Heizung, Elektro, Bau, Schreinerei, Metallbau, Fenster, Dach, Gartenbau, Kältetechnik – <a href="/branchen">alle Branchen</a></dd></div>
+      <div><dt>Wo</dt><dd>Sitz in Basel. Kampagnen und Drehs in der ganzen Deutschschweiz: Basel-Stadt, Baselland, Aargau, Solothurn, Bern, Zürich – <a href="/regionen">alle Regionen</a></dd></div>
+      <div><dt>Wie</dt><dd>Ein Drehtag bei dir im Betrieb, Kampagne auf Instagram und Facebook im Umkreis deines Standorts, Bewerbung in 2 Minuten per Handy, Vorauswahl durch uns</dd></div>
+      <div><dt>Resultate</dt><dd>Projektleiter in 2 Wochen (Adam Schreinerei AG), Sicherheitsberater in 3 Wochen (Mollet &amp; Co AG), Gartenbau-Fachkraft in 3 Wochen (Wild Gartenbau AG) – <a href="/referenzen">alle Belege</a></dd></div>
+      <div><dt>Garantie</dt><dd>Vor dem Start wird ein messbares Ziel festgelegt. Wird es nicht erreicht, arbeiten wir ohne Zusatzkosten weiter</dd></div>
+    </dl>
+  </div>
 </section>
 
 <!-- PROBLEM -->
@@ -471,23 +594,26 @@ footer a:hover{color:var(--gold)}
       <article class="srv feat rv">
         <span class="k">01</span>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Mitarbeiter finden</h3>
+        <h3><a href="/social-recruiting">Mitarbeiter finden</a></h3>
         <p>Social Recruiting, das nach deinem Betrieb aussieht – nicht nach Stellenbörse.</p>
         <ul><li>Recruiting-Video mit deinem Team</li><li>Kampagne auf Instagram &amp; Facebook</li><li>Bewerbung in 2 Min. per Handy</li><li>Vorauswahl der Bewerbungen</li></ul>
+        <a class="more" href="/social-recruiting">Social Recruiting im Detail →</a>
       </article>
       <article class="srv rv d1">
         <span class="k">02</span>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <h3>Kunden gewinnen</h3>
+        <h3><a href="/kundengewinnung">Kunden gewinnen</a></h3>
         <p>Anfragen für die Aufträge, die du wirklich willst – nicht für jede Kleinstbaustelle.</p>
         <ul><li>Werbevideos aus echten Projekten</li><li>Kampagnen in deiner Region</li><li>Anfrage-Formular, das vorsortiert</li><li>Klare Zahlen: was rausschaut</li></ul>
+        <a class="more" href="/kundengewinnung">Kundengewinnung im Detail →</a>
       </article>
       <article class="srv rv d2">
         <span class="k">03</span>
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3>Auftritt bauen</h3>
+        <h3><a href="/videoproduktion">Auftritt bauen</a></h3>
         <p>Das Fundament, auf dem beides läuft: zeigen, was du kannst.</p>
         <ul><li>Webseite, die Anfragen bringt</li><li>Laufender Social-Media-Content</li><li>Image- &amp; Referenzvideos</li><li>Kundenstimmen auf Video</li></ul>
+        <a class="more" href="/videoproduktion">Videos →</a> &nbsp; <a class="more" href="/webseiten">Webseiten →</a>
       </article>
     </div>
   </div>
@@ -622,6 +748,7 @@ footer a:hover{color:var(--gold)}
     <div>
       <span class="eyebrow rv">Von Handwerkern, für Handwerker</span>
       <p class="quote-big rv">Ich rede nicht übers Handwerk. <span style="color:#b07a1d">Ich komme daher.</span></p>
+      <p class="rv" style="margin-top:18px"><a href="/ueber-uns" style="color:#9a6614;font-weight:700;text-decoration:underline;text-underline-offset:3px">Mehr über Benjamin und 2Point Media →</a></p>
       <ol class="timeline">
         <li class="rv"><span class="y">Mit 15</span><h3>Kamera auf, Kung-Fu-Kick, Aufnahme.</h3><p>Nicht für Kunden – um besser zu werden. Aus dem Üben wurde Können, und bald fragte das Umfeld: «Machst du mir auch so ein Video?»</p></li>
         <li class="rv"><span class="y">Lehre</span><h3>Polymechaniker.</h3><p>Werkstatt, Toleranzen, Feierabend um fünf. Ich weiss, wie es in einem Betrieb läuft – und was ein Inhaber morgens um sechs im Kopf hat.</p></li>
@@ -747,6 +874,10 @@ footer a:hover{color:var(--gold)}
       <details class="rv"><summary>Funktioniert das auch in meiner Region?</summary><p>Wir sind in Basel zu Hause und arbeiten für Betriebe in der ganzen Deutschschweiz. Die Kampagnen laufen gezielt im Umkreis deines Betriebs – dort, wo deine künftigen Leute und Kunden wohnen.</p></details>
       <details class="rv"><summary>Mein Team will nicht vor die Kamera.</summary><p>Das hören wir oft – und am Drehtag ist es meistens kein Thema mehr. Wir drehen locker, im Arbeitsalltag, ohne Schauspiel. Wer nicht will, muss nicht.</p></details>
       <details class="rv"><summary>Was kostet das?</summary><p>Das hängt davon ab, was du brauchst: eine einzelne Recruiting-Kampagne ist etwas anderes als laufende Kundengewinnung. Nach der Analyse bekommst du eine klare Offerte – was wir machen, was es kostet und was am Ende rausschauen soll.</p></details>
+      <details class="rv"><summary>Was macht 2Point Media genau?</summary><p>2Point Media ist eine Marketingagentur aus Basel, die nur für Handwerksbetriebe arbeitet. Wir finden Mitarbeiter über <a href="/social-recruiting" style="color:var(--gold)">Social Recruiting</a> (Videos aus dem Betrieb, Kampagnen auf Instagram und Facebook, Bewerbung in 2 Minuten per Handy, Vorauswahl), holen Kundenanfragen über <a href="/kundengewinnung" style="color:var(--gold)">Video-Kampagnen in der Region</a> und bauen den Online-Auftritt mit <a href="/webseiten" style="color:var(--gold)">Webseite</a>, Social-Media-Content und <a href="/videoproduktion" style="color:var(--gold)">Referenzvideos</a>.</p></details>
+      <details class="rv"><summary>Was unterscheidet Social Recruiting von einem Temporärbüro oder Stellenportal?</summary><p>Stellenportale erreichen nur, wer gerade aktiv sucht. Social Recruiting zeigt Videos aus deinem Betrieb den Fachkräften in deiner Region, die bereits einen Job haben, aber offen für einen Wechsel sind. Beworben wird in 2 Minuten per Handy, ohne Lebenslauf. Wir sortieren vor – bei dir landen nur passende Bewerbungen.</p></details>
+      <details class="rv"><summary>Für welche Gewerke arbeitet ihr?</summary><p>Sanitär, Heizung und Lüftung, Elektro und Gebäudetechnik, Bau und Renovation, Schreinereien und Metallbau, Fenster-, Fassaden- und Dachbau, Gartenbau sowie Kälte- und Klimatechnik. Referenzen gibt es unter anderem von Adam Schreinerei AG, Mollet &amp; Co AG, Wild Gartenbau AG, Fenster Nauer AG, SRS Allesys AG und KK-Kühltechnik AG – <a href="/branchen" style="color:var(--gold)">Übersicht nach Branche</a>.</p></details>
+      <details class="rv"><summary>Wer ist mein Ansprechpartner?</summary><p><a href="/ueber-uns" style="color:var(--gold)">Benjamin Buja</a>, Gründer von 2Point Media und gelernter Polymechaniker. Er plant, dreht und schneidet selbst – du hast vom ersten Gespräch bis zur Auswertung eine Person als Ansprechpartner.</p></details>
     </div>
   </div>
 </section>
@@ -766,10 +897,11 @@ footer a:hover{color:var(--gold)}
   <div class="wrap">
     <div>
       <a href="#top" class="logo">2POINT <b>MEDIA</b></a>
-      <p style="margin-top:14px;max-width:320px">Recruiting und Kundengewinnung für Handwerksbetriebe. Aus Basel, für die Deutschschweiz.</p>
+      <p style="margin-top:14px;max-width:320px">Marketingagentur für Handwerksbetriebe: Social Recruiting, Kundengewinnung, Videoproduktion und Webseiten. Aus Basel, für die ganze Deutschschweiz.</p>
     </div>
     <div><h4>Kontakt</h4><ul><li><a href="tel:+41795516738">+41 79 551 67 38</a></li><li><a href="mailto:info@2pointmedia.ch">info@2pointmedia.ch</a></li><li>St. Jakob-Strasse 200<br>4052 Basel</li></ul></div>
-    <div><h4>Seite</h4><ul><li><a href="#leistungen">Leistungen</a></li><li><a href="#videos">Videos</a></li><li><a href="#rechner">Vakanz-Rechner</a></li><li><a href="#resultate">Resultate</a></li><li><a href="#ueber">Über mich</a></li></ul></div>
+    <div><h4>Leistungen</h4><ul><li><a href="/social-recruiting">Social Recruiting</a></li><li><a href="/kundengewinnung">Kundengewinnung</a></li><li><a href="/videoproduktion">Videoproduktion</a></li><li><a href="/webseiten">Webseiten</a></li><li><a href="#rechner">Vakanz-Rechner</a></li></ul></div>
+    <div><h4>Mehr</h4><ul><li><a href="/referenzen">Referenzen</a></li><li><a href="/branchen">Branchen</a></li><li><a href="/regionen">Regionen</a></li><li><a href="/ueber-uns">Über uns</a></li><li><a href="#faq">FAQ</a></li></ul></div>
     <div><h4>Social</h4><ul><li><a href="https://www.instagram.com/2point.media/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://linkedin.com/company/2-point-media/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.facebook.com/profile.php?id=100079859542845" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/playlist?list=PLq-tSkPF_7nLvM9CVybsLSK_pnYiTm-1g" target="_blank" rel="noopener">YouTube</a></li></ul></div>
     <div class="copy"><span>© <span id="yr">2026</span> 2Point Media · Basel</span><span><a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></span></div>
   </div>
