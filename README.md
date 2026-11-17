@@ -5,6 +5,7 @@ Gleiches Setup wie bei fast-recruiting: GitHub-Repo → Cloudflare Worker.
 ## Was wo liegt
 - Jeder Push auf `main` wird von Cloudflare automatisch neu veröffentlicht.
 - `public/` – die Webseite (Startseite, Impressum, Datenschutz, 404-Seite, Schriften)
+- `css/site.css`, `js/site.js` – gemeinsames Design und Script der Unterseiten (Formular, Rechner, Videos, Handy-Menü)
 - `src/worker.js` – nimmt das Anfrage-Formular entgegen und schickt dir jede Anfrage per E-Mail
 - `wrangler.jsonc` – Einstellungen für Cloudflare
 
@@ -26,6 +27,12 @@ Gleiches Setup wie bei fast-recruiting: GitHub-Repo → Cloudflare Worker.
   in `public/img/` legen und in `index.html` (Zeile mit `var CDN =`) auf `img/` umstellen.
 - Logo: aktuell ein Text-Logo. Für das echte Logo die SVG-Datei in `public/img/` legen.
 - Impressum: UID-Nummer ergänzen.
-- Freigaben: Die Zahl «100 Bewerbungen / 80 qualifiziert» ist anonymisiert (Fensterbauer). Mit schriftlicher Freigabe von Fenster Nauer kann der Name rein.
+- Freigaben: Fenster Nauer ist jetzt mit Namen und Zahlen drin (Fallstudie auf /social-recruiting: 241 Bewerbungen auf 7 Stellen,
+  gezählt aus dem Bewerbermanagement, Stand Nov. 2026). Die ältere anonyme Zahl «100 Bewerbungen / 80 qualifiziert, Fensterbauer
+  Region Basel» steht noch auf Startseite und Referenzen – prüfen, ob sie noch stimmt, oder durch die neue ersetzen.
+- Kundenstimmen-Videos Fenster Nauer und Tunc: fertigen Schnitt auf Vimeo/YouTube hochladen und den Link in `public/js/site.js`
+  bei `VIDEOS.nauer` bzw. `VIDEOS.tunc` eintragen. Solange der Link leer ist, bleibt das Video unsichtbar.
+- Google-Bewertungen: Link zum Google-Unternehmensprofil und Sternzahl liefern, dann kommen sie als Vertrauens-Element rein.
+- Preisrahmen («ab CHF …») und Vertragsbedingungen (Laufzeit, Videos gehören dem Kunden) wären starke Vertrauens-Elemente.
 - Meta-Pixel: Das Formular meldet bereits ein «Lead»-Ereignis, sobald ein Pixel eingebaut ist (dann Datenschutz ergänzen).
 - Die alte Adresse /kontaktanfrage wird automatisch auf das neue Formular weitergeleitet.
