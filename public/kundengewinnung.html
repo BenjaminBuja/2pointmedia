@@ -150,7 +150,7 @@
       <li><a href="/referenzen">Referenzen</a></li>
       <li><a href="/ueber-uns">Über uns</a></li>
     </ul></nav>
-    <a href="/#analyse" class="btn btn-gold">Kostenlose Analyse</a>
+    <div class="right"><a href="#analyse" class="btn btn-gold">Kostenlose Analyse</a><button type="button" class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span></button></div>
   </div>
 </header>
 <main>
@@ -160,9 +160,16 @@
     <span class="eyebrow">Kunden gewinnen · Leistung 02</span>
     <h1 class="display">Kunden gewinnen – <span class="gold">planbar statt zufällig.</span></h1>
     <p class="lead"><strong>Kundengewinnung für Handwerksbetriebe:</strong> Wir drehen Werbevideos aus deinen echten Projekten und zeigen sie Hausbesitzern und Firmen in deiner Region. Anfragen kommen über ein Formular, das vorsortiert. Jeden Monat siehst du, was rausgeschaut hat.</p>
-    <div class="cta"><a href="/#analyse" class="btn btn-gold">Kostenlose Potenzial-Analyse</a><a href="/referenzen" class="btn btn-ghost">Resultate ansehen</a></div>
+    <div class="cta"><a href="#analyse" class="btn btn-gold">Kostenlose Potenzial-Analyse</a><a href="/referenzen" class="btn btn-ghost">Resultate ansehen</a></div>
     <div class="micro"><span>Anfragen aus deiner Region</span><span>Formular sortiert vor</span><span>Monatliche Zahlen</span><span>Videos gehören dir</span></div>
   </div>
+</section>
+
+<section class="kpis" aria-label="Eckdaten">
+  <div class="kpi"><div class="num">10×</div><p>mindestens zurück, was in Video und Kampagne investiert wurde<span class="who">mehrere Kunden</span></p></div>
+  <div class="kpi"><div class="num">1</div><p>Drehtag – für Videos, die Kunden und Bewerber überzeugen<span class="who">dein Aufwand</span></p></div>
+  <div class="kpi"><div class="num">1</div><p>Ansprechpartner von der Idee bis zur Auswertung<span class="who">Benjamin Buja</span></p></div>
+  <div class="kpi"><div class="num">100 %</div><p>der Videos gehören dir – für Webseite, Offerten und Social Media<span class="who">auch nach der Kampagne</span></p></div>
 </section>
 
 <section class="sec">
@@ -182,7 +189,50 @@
     </div>
   </div>
 </section>
+<section class="sec alt" id="rechner">
+  <div class="wrap">
+    <span class="eyebrow">Anfrage-Rechner</span>
+    <h2 class="display">Was ist dir <span class="gold">eine Anfrage wert?</span></h2>
+    <div class="prose"><p>Bevor du über Werbebudget redest, lohnt sich eine einfache Rechnung: Was bringt dir eine einzige gute Anfrage im Schnitt ein? Schieb die Regler auf deine Zahlen.</p></div>
+    <div class="calc">
+      <div class="card inputs">
+        <div class="field"><label for="k-val">Durchschnittlicher Auftragswert <output id="o-val">CHF 12'000</output></label><input type="range" id="k-val" min="2000" max="80000" step="1000" value="12000"><small>Zum Beispiel eine Badsanierung, ein Heizungsersatz, neue Fenster.</small></div>
+        <div class="field"><label for="k-req">Zusätzliche Anfragen pro Monat <output id="o-req">6</output></label><input type="range" id="k-req" min="1" max="30" step="1" value="6"></div>
+        <div class="field"><label for="k-rate">Davon wirst du beauftragt <output id="o-rate">25 %</output></label><input type="range" id="k-rate" min="5" max="60" step="1" value="25"><small>Von 4 Offerten 1 Auftrag = 25 %.</small></div>
+        <div class="field"><label for="k-mar">Was davon bei dir hängen bleibt <output id="o-kmar">35 %</output></label><input type="range" id="k-mar" min="15" max="60" step="1" value="35"><small>Der Teil des Umsatzes, der nach Material und Fremdkosten übrig bleibt (Deckungsbeitrag).</small></div>
+      </div>
+      <div class="result" aria-live="polite">
+        <div><div class="eyebrow">Zusätzlich pro Monat</div><div class="big" id="k-month">CHF 0</div><div class="per">Deckungsbeitrag aus neuen Aufträgen – nach Material und Fremdkosten.</div></div>
+        <div class="daily"><div><strong id="k-lead">CHF 0</strong><span>wert ist dir jede Anfrage</span></div><div><strong id="k-year">CHF 0</strong><span>pro Jahr</span></div></div>
+        <div><a href="#analyse" class="btn btn-gold" style="width:100%">Durchrechnen lassen – Analyse anfragen</a><p class="formula">Rechnung: Auftragswert × Abschlussquote × Anteil, der hängen bleibt = Wert einer Anfrage. Mal Anfragen pro Monat = zusätzlicher Deckungsbeitrag. Was eine Anfrage in deiner Region kostet, sagen wir dir in der Analyse.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Belegte Resultate</span>
+    <h2 class="display">Was Kunden <span class="gold">sagen.</span></h2>
+    <div class="grid">
+      <div class="quote" data-needs-video="tunc"><button type="button" class="vid r169" data-video="tunc" aria-label="Video abspielen: Kundenstimme Tunc"><span class="dur">Kundenstimme</span><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></button></div>
+      <div class="quote"><div class="stars">★★★★★</div><div class="after">Investment <em>um ein Vielfaches zurück</em></div><blockquote>«Wir haben unsere Werbekampagne mit 2Point Media aufgebaut. Dank der professionellen Werbevideos und der Betreuung der Kanäle konnten wir unser Investment in die Kampagne um ein Vielfaches wieder hereinholen.»</blockquote><div class="person"><img data-src="30a24537-dcd9-4e58-a570-ff10bc6bfd13" alt="Serkan Kalkan" loading="lazy"><div><b>Serkan Kalkan</b><span>Geschäftsführer, Worksystem SWISS</span></div></div></div>
+      <div class="quote"><div class="stars">★★★★★</div><div class="after">Viele <em>neue Kunden</em></div><blockquote>«Dank 2Point Media haben wir unseren gesamten Onlineauftritt perfekt umgesetzt und konnten dadurch viele neue Kunden gewinnen.»</blockquote><div class="person"><img data-src="74a36ab9-52b7-4937-838e-505db4b579ef" alt="Bilgay Coruk" loading="lazy"><div><b>Bilgay Coruk</b><span>Geschäftsführer, ByWood GmbH</span></div></div></div>
+      <div class="quote"><div class="stars">★★★★★</div><div class="after">Man sieht, <em>was wir können</em></div><blockquote>«2Point Media hat unseren ganzen Online-Auftritt aufgebaut – inklusive Kundenstimmen. So sieht man genau, was wir leisten können. Ich kann 2Point Media nur weiterempfehlen.»</blockquote><div class="person"><img data-src="a3cb2b0d-a259-441f-b020-aa5335988c3b" alt="Livio Brun" loading="lazy"><div><b>Livio Brun</b><span>Geschäftsführer, KK-Kühltechnik AG</span></div></div></div>
+    </div>
+    <p style="margin-top:26px"><a href="/referenzen">Alle Referenzen und Kundenstimmen →</a></p>
+  </div>
+</section>
 <section class="sec alt">
+  <div class="wrap">
+    <span class="eyebrow">Ehrlich gesagt</span>
+    <h2 class="display">Für wen es sich lohnt – <span class="gold">und für wen nicht.</span></h2>
+    <div class="fit">
+      <div class="card yes"><h3>Passt gut, wenn …</h3><ul><li>deine Aufträge mehrere tausend Franken wert sind</li><li>du freie Kapazität hast oder bald haben wirst</li><li>du zeigen kannst, was du baust – fertige Projekte, zufriedene Kunden</li><li>jemand Anfragen innert 24 Stunden zurückruft</li><li>du in einer Region arbeitest, in der genug Hausbesitzer oder Firmen sind</li></ul></div>
+      <div class="card no"><h3>Passt nicht, wenn …</h3><ul><li>du heute schon mehr Arbeit hast, als dein Team schafft – dann zuerst <a href="/social-recruiting">Leute finden</a></li><li>du vor allem Kleinstaufträge suchst</li><li>du nach drei Wochen Wunder erwartest – Kundengewinnung rechnet in Monaten</li><li>Anfragen tagelang liegen bleiben</li></ul></div>
+    </div>
+  </div>
+</section>
+<section class="sec">
   <div class="wrap">
     <span class="eyebrow">Zwei Fronten, ein System</span>
     <h2 class="display">Dieselben Videos. <span class="gold">Doppelter Nutzen.</span></h2>
@@ -195,11 +245,94 @@
     </div>
   </div>
 </section>
-<section class="sec">
+<section class="sec" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><span>ZIEL-<br>GARANTIE</span></div>
+      <div>
+        <h3>Wir arbeiten, bis das Ziel steht.</h3>
+        <p>Vor dem Start legen wir gemeinsam ein messbares Ziel fest – eine Anzahl Anfragen aus deiner Region. Erreichen wir es nicht, arbeiten wir ohne Zusatzkosten weiter, bis es steht. Darum nehmen wir auch nur Betriebe an, bei denen wir sicher sind, dass es klappt.</p>
+      </div>
+      <a href="#analyse" class="btn btn-gold">Passt mein Betrieb?</a>
+    </div>
+  </div>
+</section>
+<section class="sec apply" id="analyse">
+  <div class="wrap apply-grid">
+    <div>
+      <span class="eyebrow">Kostenlose Potenzial-Analyse</span>
+      <h2 class="display">Wie viele Anfragen <span class="gold">liegen drin?</span></h2>
+      <p class="lead">20 Minuten am Telefon: Wir schauen, welche Aufträge du willst, in welchem Umkreis – und ob sich eine Kampagne für deinen Betrieb rechnet. Wenn nicht, sagen wir es dir.</p>
+      <ul class="checks"><li>Ehrliche Einschätzung, keine Verkaufsmasche</li><li>Grobe Rechnung: was eine Anfrage in deiner Region kostet</li><li>Rückmeldung innert 24 Stunden (werktags)</li></ul>
+      <div class="contact"><img data-src="468d000d-8559-4dc4-8ef3-0c9ccb156b88" alt="Benjamin Buja" loading="lazy"><div><b>Du sprichst direkt mit Benjamin.</b><span>Gründer, plant, dreht und schneidet selbst. Kein Callcenter, kein Verkäufer. <a href="tel:+41795516738">079 551 67 38</a></span></div></div>
+    </div>
+    <form class="form" id="leadform" data-ziel="Kunden" novalidate>
+      <div class="progress"><i id="bar"></i></div>
+      <div class="stepinfo" id="stepinfo">Schritt 1 von 4 · dauert 60 Sekunden</div>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="fstep on" data-step="1">
+        <h3>Wo drückt der Schuh?</h3>
+        <div class="opts" data-name="ziel">
+          <button type="button" class="opt" data-v="Mitarbeiter"><span class="em">👷</span><span>Mir fehlen gute Leute<small>Stellen bleiben offen</small></span></button>
+          <button type="button" class="opt" data-v="Kunden"><span class="em">📞</span><span>Mir fehlen gute Aufträge<small>zu abhängig von Mundpropaganda</small></span></button>
+          <button type="button" class="opt" data-v="Beides"><span class="em">🔥</span><span>Beides<small>Leute und Aufträge</small></span></button>
+        </div>
+      </div>
+      <div class="fstep" data-step="2">
+        <h3>Deine Branche?</h3>
+        <div class="opts two" data-name="branche">
+          <button type="button" class="opt" data-v="Sanitär / Heizung / Lüftung">Sanitär / Heizung / Lüftung</button>
+          <button type="button" class="opt" data-v="Elektro / Gebäudetechnik">Elektro / Gebäudetechnik</button>
+          <button type="button" class="opt" data-v="Bau / Renovation">Bau / Renovation</button>
+          <button type="button" class="opt" data-v="Schreiner / Metallbau">Schreiner / Metallbau</button>
+          <button type="button" class="opt" data-v="Fenster / Fassade / Dach">Fenster / Fassade / Dach</button>
+          <button type="button" class="opt" data-v="Andere">Andere</button>
+        </div>
+      </div>
+      <div class="fstep" data-step="3">
+        <h3>Wie viele Leute arbeiten bei dir?</h3>
+        <div class="opts two" data-name="groesse">
+          <button type="button" class="opt" data-v="1–5">1–5</button>
+          <button type="button" class="opt" data-v="6–15">6–15</button>
+          <button type="button" class="opt" data-v="16–50">16–50</button>
+          <button type="button" class="opt" data-v="über 50">über 50</button>
+        </div>
+      </div>
+      <div class="fstep" data-step="4">
+        <h3>Wohin dürfen wir uns melden?</h3>
+        <div class="inp">
+          <div class="row">
+            <div><label for="f-name">Vor- und Nachname *</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div><label for="f-firma">Betrieb *</label><input id="f-firma" name="firma" autocomplete="organization" required></div>
+          </div>
+          <div class="row">
+            <div><label for="f-tel">Telefon *</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required placeholder="079 123 45 67"></div>
+            <div><label for="f-mail">E-Mail *</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div><label for="f-ort">Ort</label><input id="f-ort" name="ort" autocomplete="address-level2" placeholder="z. B. Liestal"></div>
+        </div>
+        <p class="consent">Mit dem Absenden bist du einverstanden, dass wir dich zu deiner Anfrage kontaktieren. Mehr in der <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+      </div>
+      <div class="fstep" data-step="5">
+        <div class="done">
+          <div class="ok">✓</div>
+          <h3>Angekommen!</h3>
+          <p id="done-text">Benjamin meldet sich innert 24 Stunden (werktags) bei dir. Wenn's pressiert: Schreib direkt per WhatsApp.</p>
+          <a class="btn btn-gold" href="https://wa.me/41795516738" target="_blank" rel="noopener">WhatsApp öffnen</a>
+        </div>
+      </div>
+      <div class="fnav" id="fnav">
+        <button type="button" class="back" id="back" hidden>← Zurück</button>
+        <button type="button" class="btn btn-gold" id="next">Weiter</button>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="sec alt">
   <div class="wrap">
     <span class="eyebrow">Fragen</span>
     <h2 class="display">Was Inhaber uns <span class="gold">fragen.</span></h2>
-    <div class="faq"><details><summary>Für welche Aufträge funktioniert das?</summary><p>Am besten für planbare, grössere Arbeiten: Badsanierungen, Heizungsersatz, Küchen- und Innenausbau, Fenster- und Fassadenersatz, Dachsanierungen, Gartenumgestaltungen, Klimaanlagen. Also die Aufträge, die du wirklich willst – nicht jede Kleinstbaustelle.</p></details><details><summary>Wie schnell kommen Anfragen?</summary><p>Bei der Kundengewinnung rechnen wir in Monaten, nicht in Tagen. Erste Anfragen kommen oft in den ersten Wochen, planbar wird es nach zwei bis drei Monaten, wenn die Kampagne eingespielt ist. Dafür ist es dann planbar – im Gegensatz zu Mundpropaganda.</p></details><details><summary>Was unterscheidet das von Google Ads?</summary><p>Bei Google findet dich, wer schon sucht – da stehst du neben allen Mitbewerbern. Mit Videos auf Instagram und Facebook zeigen wir Hausbesitzern in deiner Region deine Arbeit, bevor sie suchen. Beides kann sich ergänzen; wir sagen dir in der Analyse, was für deinen Betrieb Sinn macht.</p></details><details><summary>Was kommt bei dir an?</summary><p>Anfragen über ein Formular, das vorsortiert: Art der Arbeit, Ort, Zeitrahmen, Kontaktdaten. Du siehst sofort, ob sich ein Rückruf lohnt. Jeden Monat bekommst du eine Übersicht: wie viele Anfragen, aus welcher Region, was sie gekostet haben.</p></details><details><summary>Lohnt sich das für einen kleinen Betrieb?</summary><p>Wenn du zusätzliche Aufträge auch abarbeiten kannst – ja. Wenn du eigentlich Leute brauchst, lösen wir zuerst das Recruiting. Oft hängt beides zusammen, darum bieten wir beides aus einer Hand.</p></details></div>
+    <div class="faq"><details><summary>Für welche Aufträge funktioniert das?</summary><p>Am besten für planbare, grössere Arbeiten: Badsanierungen, Heizungsersatz, Küchen- und Innenausbau, Fenster- und Fassadenersatz, Dachsanierungen, Gartenumgestaltungen, Klimaanlagen. Also die Aufträge, die du wirklich willst – nicht jede Kleinstbaustelle.</p></details><details><summary>Wie schnell kommen Anfragen?</summary><p>Bei der Kundengewinnung rechnen wir in Monaten, nicht in Tagen. Erste Anfragen kommen oft in den ersten Wochen, planbar wird es nach zwei bis drei Monaten, wenn die Kampagne eingespielt ist. Dafür ist es dann planbar – im Gegensatz zu Mundpropaganda.</p></details><details><summary>Was unterscheidet das von Google Ads?</summary><p>Bei Google findet dich, wer schon sucht – da stehst du neben allen Mitbewerbern. Mit Videos auf Instagram und Facebook zeigen wir Hausbesitzern in deiner Region deine Arbeit, bevor sie suchen. Beides kann sich ergänzen; wir sagen dir in der Analyse, was für deinen Betrieb Sinn macht.</p></details><details><summary>Was kommt bei dir an?</summary><p>Anfragen über ein Formular, das vorsortiert: Art der Arbeit, Ort, Zeitrahmen, Kontaktdaten. Du siehst sofort, ob sich ein Rückruf lohnt. Jeden Monat bekommst du eine Übersicht: wie viele Anfragen, aus welcher Region, was sie gekostet haben.</p></details><details><summary>Mit welchen Werkzeugen arbeitet ihr?</summary><p>Die Kampagnen schalten wir über den Werbeanzeigenmanager von Meta (Instagram und Facebook), geschnitten wird mit Adobe-Programmen, und KI-Werkzeuge setzen wir dort ein, wo sie Zeit sparen. Das sind Werkzeuge, die wir einsetzen – keine offiziellen Partnerschaften. Entscheidend ist nicht das Programm, sondern dass das Video nach deinem Betrieb aussieht.</p></details><details><summary>Lohnt sich das für einen kleinen Betrieb?</summary><p>Wenn du zusätzliche Aufträge auch abarbeiten kannst – ja. Wenn du eigentlich Leute brauchst, lösen wir zuerst das Recruiting. Oft hängt beides zusammen, darum bieten wir beides aus einer Hand.</p></details></div>
   </div>
 </section>
 
@@ -207,7 +340,7 @@
   <div class="wrap">
     <h2 class="display">Zeit, den <span class="gold">Riesen</span> zu wecken.</h2>
     <p>20 Minuten am Telefon. Danach weisst du, ob sich das für deinen Betrieb lohnt – auch wenn du es nachher selber machst.</p>
-    <div class="row"><a href="/#analyse" class="btn btn-gold">Kostenlose Potenzial-Analyse</a><a href="tel:+41795516738" class="btn btn-ghost">079 551 67 38</a></div>
+    <div class="row"><a href="#analyse" class="btn btn-gold">Kostenlose Potenzial-Analyse</a><a href="tel:+41795516738" class="btn btn-ghost">079 551 67 38</a></div>
   </div>
 </section>
 </main>
@@ -224,9 +357,14 @@
     <div class="copy"><span>© 2026 2Point Media · Basel</span><span><a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></span></div>
   </div>
 </footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Video">
+  <button type="button" class="x" id="modal-x" aria-label="Video schliessen">×</button>
+  <div class="frame" id="modal-frame"></div>
+</div>
 <div class="mbar">
   <a href="tel:+41795516738" class="btn ic" aria-label="Anrufen"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
-  <a href="/#analyse" class="btn btn-gold">Kostenlose Analyse</a>
+  <a href="#analyse" class="btn btn-gold">Kostenlose Analyse</a>
 </div>
+<script src="/js/site.js" defer></script>
 </body>
 </html>
